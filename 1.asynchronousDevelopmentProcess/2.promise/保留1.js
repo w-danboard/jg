@@ -31,28 +31,23 @@ class Promise {
     }
   }
   then(onfulfilled, onrejected) { // 成功的回调和失败的回调
-    let promise2;
-    //  调用then后必须返回一个新的promise
-    promise2 = new Promise((resolve, reject) => {
-      // 如果状态是成功的时候
-      if(this.status === 'fulfilled') {
-        let x = onfulfilled(this.value);
-      }
-      // 如果装填是失败的时候
-      if(this.status === 'rejected') {
-        onrejected(this.reason);
-      }
-      // 先把成功的回调和失败的回调分开存放 (订阅)
-      if(this.status === 'pending') {
-        this.resolveCallback.push(() => {
-          onfulfilled(this.value)
-        });
-        this.rejectCallback.push(() => {
-          onrejected(this.value)
-        });
-      }
-    })
-    return promise2;
+    // 如果状态是成功的时候
+    if(this.status === 'fulfilled') {
+      onfulfilled(this.value);
+    }
+    // 如果装填是失败的时候
+    if(this.status === 'rejected') {
+      onrejected(this.reason);
+    }
+    // 先把成功的回调和失败的回调分开存放 (订阅)
+    if(this.status === 'pending') {
+      this.resolveCallback.push(() => {
+        onfulfilled(this.value)
+      });
+      this.rejectCallback.push(() => {
+        onrejected(this.value)
+      });
+    }
   }
 }
 

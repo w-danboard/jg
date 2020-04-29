@@ -21,3 +21,9 @@ promise.then(function(value) {
 
 // 一个 promise实例 可以then多次 分别绑定成功和失败 当触发resolve和reject的时候 触发对应的成功和失败
 
+// promise中的链式调用
+let fs = require('fs');
+
+fs.readFile(function() {
+  fs.readFile()
+})
