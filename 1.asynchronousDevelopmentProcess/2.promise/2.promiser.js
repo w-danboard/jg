@@ -1,6 +1,6 @@
 let fs = require('fs');
 let path = require('path');
-let Promise = require('./1.promise');
+let Promise = require('./promise');
 
 let namePath = path.resolve(__dirname, 'name.txt');
 let eagPath = path.resolve(__dirname, 'age.txt')

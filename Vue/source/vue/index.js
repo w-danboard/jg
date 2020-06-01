@@ -35,10 +35,8 @@ function query(el) {
 const defaultRE = /\{\{((?:.|\r?\n)+?)\}\}/g;
 const util = {
   getValue(vm, expr) {  // scholl.name
-    console.log('expr', expr)
     let keys = expr.split('.');
     return keys.reduce((memo, current) => {
-      console.log('memo', memo)
       memo = memo[current];
       console.log('memo---', memo)
       return memo;
@@ -46,6 +44,7 @@ const util = {
   },
   compilerText(node, vm) {  // 编译文本 替换{{}}
     node.textContent = node.textContent.replace(defaultRE, function(...args) {
+      console.log('util.getValue(vm, args[1])', util.getValue(vm, args[1]))
       return util.getValue(vm, args[1])
     })
   }
@@ -55,7 +54,7 @@ function compiler(node, vm) { // node是文档碎片
   // 将类数组转化成数组
   [...childNodes].forEach(child => {  // 一种元素 一种文本
     if(child.nodeType == 1) { // 1元素 3文本
-
+      compiler(child, vm); // 编译当前元素的孩子节点
     } else if(child.nodeType == 3) {
       util.compilerText(child, vm);
     }
@@ -77,6 +76,8 @@ Vue.prototype._update = function() {
   compiler(node, vm);
   el.appendChild(node);
   // 需要匹配{{}}的方式来进行替换
+  
+  // 依赖收集 属性变化了 需要重新渲染
 }
 Vue.prototype.$mount = function() {
   let vm = this;
