@@ -12,3 +12,5 @@ console.log(path.join(__dirname, './name.txt', '/'))
 
 let r = fs.readFileSync('./name.txt', 'utf8');
 console.log(r);
+
+// path 还有取扩展名 或出掉某些字符的剩余字符
