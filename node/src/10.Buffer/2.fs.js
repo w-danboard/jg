@@ -15,3 +15,7 @@ fs.readFile('./name1.txt', 'utf8', (err, data) => {
 });
 
 // 读取一点 暂停 接着读取
+
+// 自己来操作读取的个数 还有写入的个数
+
+// open read write close
