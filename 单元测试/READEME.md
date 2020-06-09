@@ -18,3 +18,6 @@
   ### 测试工具 mocha(测试框架) + chai(断言库) / jest(现在比较流行的一个测试框架)
   - Karma(现在用的不是很多，它相当于把你的代码放到浏览器去执行) + Jasmine + chrome-launcher
   - Karma + mocha + chai / jest 使用jsdom(用js来描述这个dom)
+
+  ### chai文档
+  > www.chijs.com/api/bdd/
