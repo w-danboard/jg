@@ -2,6 +2,7 @@
   <div id="app">
     <HelloWorld msg="Welcome"/>
     <Counter></Counter>
+    <Parent></Parent>
   </div>
 </template>
 
@@ -10,10 +11,13 @@ import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from './components/HelloWorld.vue';
 import Counter from './components/Counter.vue';
 
+import Parent from './components/Parent.vue';
+
 @Component({
   components: {
     HelloWorld,
-    Counter
+    Counter,
+    Parent
   },
 })
 export default class App extends Vue {}
