@@ -10,7 +10,11 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Counter extends Vue {
-  count: number = 10
+  count: number = 10;
+
+  increment() {
+    this.count++;
+  }
 }
 </script>
 
