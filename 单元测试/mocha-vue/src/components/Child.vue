@@ -1,7 +1,7 @@
 <template>
   <div>
     <span @click="show">点我显示标签</span>
-    <button @click="click">click</button>
+    <button @click="clickMe">click</button>
   </div>
 </template>
 
@@ -10,13 +10,13 @@ import { Component, Prop, Vue, Emit } from 'vue-property-decorator';
 
 @Component
 export default class Child extends Vue {
-  @Prop() private fn!: () => any;
+  @Prop() private fn!: (str: string) => any;
 
   @Emit()
   show () {}
 
-  click () {
-    console.log(1111)
+  clickMe () {
+    this.fn('测试啊')
   }
 }
 </script>

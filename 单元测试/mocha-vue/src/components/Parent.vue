@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Child @show="show"></Child>
+    <Child :fn="fn" @show="show"></Child>
     <div id="content" v-if="isShow">内容</div>
   </div>
 </template>
@@ -19,6 +19,10 @@ export default class parent extends Vue {
 
   show () {
     this.isShow = true;
+  }
+
+  fn (params: string) {
+    console.log(params)
   }
 }
 </script>
