@@ -1,5 +1,9 @@
 <template>
-  <button>默认按钮</button>
+  <button>
+    <span v-if="this.$slots.default">
+      <slot></slot>
+    </span>
+  </button>
 </template>
 
 <script>

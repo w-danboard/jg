@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <wl-button></wl-button>
+    <wl-button>haha</wl-button>
     <wl-icon></wl-icon>
   </div>
 </template>
