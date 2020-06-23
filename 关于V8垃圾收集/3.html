@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  function Person(name) {
+    this.name = name
+  }
+
+  // 来两个实例 根据类实例化两个对象出来 在浏览器所以全局变量
+  let p1 = new Person('wl1')
+  let p2 = new Person('wl2')
+
+  setTimeout(() => {
+    p1 = null
+  }, 3000)
+  
+  setTimeout(() => {
+    p2 = null
+  }, 10000)
+</script>
+</html>

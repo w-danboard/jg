@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  function Person(name) {
+    this.name = name
+  }
+  let set = new Set()
+  let p1 = new Person('wl1') // 此刻引用计数为1
+  set.add(p1) // 此刻引用计数为2
+  p1 = null // 此刻引用计数为1 Person还在 并没有完全被销毁
+  set = null // 完全被销毁
+</script>
+</html>
