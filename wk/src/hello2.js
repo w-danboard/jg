@@ -1,1 +1,0 @@
-document.write('我是hello2')
