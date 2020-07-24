@@ -1,4 +1,4 @@
-// let r = require('./a')
+// let r = require('./Aa')
 // console.log(r)
 
 // let r = (function(exports, require, module, __filename, __dirname) {
@@ -276,9 +276,8 @@ function myRequire (filepath) {
   return Module._load(filepath)
 }
 
-// myRequire = require
-var r = myRequire('./a')
-console.log(r)
+let myModule = myRequire('./a')
+console.log(`名字：${myModule.name}, 年龄：${myModule.age}`)
 
 
 
@@ -290,3 +289,7 @@ console.log(r)
  * 5. 更改exports的引用，不会导致module.exports的变化
  * 6. 循环引用，一般不会出现，如果出现只能加载部分数据
  */
+
+//  console.log(exports, module.children[0])
+
+// console.log(require.cache)

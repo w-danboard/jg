@@ -1,6 +1,6 @@
-let name = 'w111l'
-let age = 20
-console.log('我是初始化')
+let name = 'wl'
+let age = 18
 
-module.exports = { name, age }
+exports.name = name
 
+console.log('我是a文件', exports, module.exports)
