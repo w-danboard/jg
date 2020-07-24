@@ -1,4 +1,5 @@
-// let r = require('./Aa')
+
+// let r = require('./a')
 // console.log(r)
 
 // let r = (function(exports, require, module, __filename, __dirname) {
@@ -276,8 +277,14 @@ function myRequire (filepath) {
   return Module._load(filepath)
 }
 
+<<<<<<< HEAD
 let myModule = myRequire('./a')
 console.log(`名字：${myModule.name}, 年龄：${myModule.age}`)
+=======
+// myRequire = require
+var r = myRequire('./a')
+console.log(r)
+>>>>>>> 79a920534a25274bf6fadf06232c8a3a5679449b
 
 
 
@@ -288,8 +295,12 @@ console.log(`名字：${myModule.name}, 年龄：${myModule.age}`)
  * 4. 模块是冬天加载的，每次require都会获取最新的导出结果，可以将require写到条件中
  * 5. 更改exports的引用，不会导致module.exports的变化
  * 6. 循环引用，一般不会出现，如果出现只能加载部分数据
+<<<<<<< HEAD
  */
 
 //  console.log(exports, module.children[0])
 
 // console.log(require.cache)
+=======
+ */
+>>>>>>> 79a920534a25274bf6fadf06232c8a3a5679449b
