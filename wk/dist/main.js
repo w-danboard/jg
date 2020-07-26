@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/login.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/login.js":
+/***/ "./src/index.js":
 /*!**********************!*\
-  !*** ./src/login.js ***!
+  !*** ./src/index.js ***!
   \**********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.write('login')\n\n//# sourceURL=webpack:///./src/login.js?");
+console.log('我是index.js文件')
 
 /***/ })
 
