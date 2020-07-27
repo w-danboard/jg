@@ -1,1 +1,2 @@
-console.log('我是index.js文件')
+let title = require('./title')
+console.log(title)
