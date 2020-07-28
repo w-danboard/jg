@@ -28,7 +28,7 @@
      // 把此模块设置为已经加载成功
  		module.l = true;
 
-     // Return the exports of the module
+     // Return the exports of the module/*  */
      // 返回此模块的导出对象
  		return module.exports;
  	}
