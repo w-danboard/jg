@@ -14,3 +14,11 @@
 - esModul: 浏览器遵循的规范，每一个文件都是一个单独的模块。导入import 导出export export defualt
 
 ## webpack 是基于node开发的 所以它的配置文件 都是遵循commonJS规范
+
+## 安装webpack npm i webpack webpack-cli --save-dev （-D 是 --save-dev的简写）
+
+### ----------------------------------------------------------------------------------
+- npx webpack 应该执行的是node_modules .bin 中的webpack [需要是node5.2版本以上的]
+- npx webpack --mode development 打包开发环境
+
+##  "webpack": "^4.43.0",  4前面的箭头表示 小版本升级 也就是以当前的4.43.0版本升级到最新的版本
