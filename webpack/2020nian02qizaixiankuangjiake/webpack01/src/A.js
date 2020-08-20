@@ -1,2 +1,4 @@
 import sum from './B.js'
-console.log(sum)
+export const A = 100
+export const B = 200
+console.log(sum(A, B))
