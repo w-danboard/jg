@@ -22,3 +22,5 @@
 - npx webpack --mode development 打包开发环境
 
 ##  "webpack": "^4.43.0",  4前面的箭头表示 小版本升级 也就是以当前的4.43.0版本升级到最新的版本
+
+## webpack插件: clean-webpack-plugin 【为了清除之前打包的文件】

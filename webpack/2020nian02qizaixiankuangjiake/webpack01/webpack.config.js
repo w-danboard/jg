@@ -16,6 +16,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: '啦啦啦',
       template: './index.html',
+      minify: true, // 压缩生成的html
       filename: 'newIndex.html' // 生成HTML的名字 不写的话 默认是模板的名字
     })
   ]
