@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack",
+    "dev": "webpack-dev-server",
     "mydev": "webpack --config webpack.dev.conf.js",
     "build": "webpack"
   },
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "clean-webpack-plugin": "^3.0.0",
-    "html-webpack-plugin": "^4.3.0"
+    "html-webpack-plugin": "^4.3.0",
+    "webpack-dev-server": "^3.11.0"
   }
 }

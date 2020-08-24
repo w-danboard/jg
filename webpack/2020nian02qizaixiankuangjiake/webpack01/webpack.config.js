@@ -19,5 +19,12 @@ module.exports = {
       minify: true, // 压缩生成的html
       filename: 'newIndex.html' // 生成HTML的名字 不写的话 默认是模板的名字
     })
-  ]
+  ],
+  devServer: {
+    port: 7000, // 打开的端口 0~65525
+    open:  true, // 自动打开浏览器页面
+    hot: true,   // 热更新
+    compress: true, // 指定文件 一切服务都启用gzip 压缩
+    contentBase: './src/static' // 指定静态资源目录
+  }
 }
