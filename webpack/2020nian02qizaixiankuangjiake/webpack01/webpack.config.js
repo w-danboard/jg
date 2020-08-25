@@ -23,7 +23,7 @@ module.exports = {
   devServer: {
     port: 7000, // 打开的端口 0~65525
     open:  true, // 自动打开浏览器页面
-    hot: true,   // 热更新
+    hot: true,   // 热更新 （只更新改变的组件或者模块，不会整体刷新）
     compress: true, // 指定文件 一切服务都启用gzip 压缩
     contentBase: './src/static' // 指定静态资源目录
   }
