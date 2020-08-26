@@ -1,0 +1,31 @@
+{
+  "name": "zf-npm-pack",
+  "version": "2.1.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "my-pack": "./bin/www.js",
+    "mp": "./bin/www.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.0.0",
+    "jquery": "^3.4.1",
+    "mime": "^2.4.4"
+  },
+  "scripts": {
+    "predev": "echo xxx",
+    "dev": "mime a.js",
+    "postdev": "echo ooo"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5"
+  },
+  "peerDependencies": {
+    "jquery": "3.4.1"
+  },
+  "optionalDependencies": {
+    "mz": "1.0.0"
+  }
+}

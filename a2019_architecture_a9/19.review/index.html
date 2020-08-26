@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="height:20000px" id="body">
+    
+</body>
+<script>
+    // function debounce(fn,delay){ // 节流
+    //     let timer = null;
+    //     return function () {
+    //         clearTimeout(timer);
+    //         timer = setTimeout(() => {
+    //             fn.call(this,...arguments)
+    //         }, delay);  
+    //     }
+    // }
+
+    function throttle(fn,delay){ // 节流
+        let start = Date.now() ;
+        return function () {
+            let last = Date.now();
+            if(last - start > delay){
+                fn.apply(this,arguments)
+                start = last;
+            }
+        }
+    }
+    // 输入框 
+    body.onscroll = throttle(function () {
+        console.log('滚动')
+    },1000)
+</script>
+</html>

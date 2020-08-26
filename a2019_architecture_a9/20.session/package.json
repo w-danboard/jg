@@ -1,0 +1,21 @@
+{
+  "name": "20.session",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.session.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "jwt-simple": "^0.5.6",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-views": "^6.2.1",
+    "uuid": "^3.3.3"
+  }
+}

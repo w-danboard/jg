@@ -1,0 +1,274 @@
+{
+  "keys": "/Users/wanglin/Desktop/jg/e/e/config/config.default.js",
+  "view": {
+    "defaultExtension": "/Users/wanglin/Desktop/jg/e/e/config/config.default.js",
+    "defaultViewEngine": "/Users/wanglin/Desktop/jg/e/e/config/config.default.js",
+    "mapping": {
+      ".html": "/Users/wanglin/Desktop/jg/e/e/config/config.default.js"
+    },
+    "root": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-view/config/config.local.js"
+  },
+  "session": {
+    "maxAge": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "type": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-static/config/config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-view-nunjucks/config/config.default.js",
+    "throwOnUndefined": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-view-nunjucks/config/config.default.js",
+    "trimBlocks": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-view-nunjucks/config/config.default.js",
+    "lstripBlocks": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-view-nunjucks/config/config.default.js",
+    "cache": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg-view-nunjucks/config/config.local.js"
+  },
+  "env": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "name": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "version": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "description": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "main": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "scripts": {
+      "dev": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+    },
+    "keywords": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "author": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "license": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "dependencies": {
+      "egg": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+      "egg-view-nunjucks": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "egg-bin": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+    }
+  },
+  "baseDir": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "strict": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+      "depth": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "env": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "level": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "logging": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+      "port": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/wanglin/Desktop/jg/e/e/node_modules/egg/config/config.default.js"
+}

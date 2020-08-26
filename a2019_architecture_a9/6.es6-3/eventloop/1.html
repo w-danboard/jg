@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        let callbacks = [];
+        console.log(111)
+        function nextTick(cb) {
+            callbacks.push(cb);
+        }
+        nextTick(function() {
+            console.log(app.children.length)
+        })
+        function flushCallbacks() {
+            callbacks.forEach(function(fn){
+                fn();
+            });
+        }
+        let timerFunc = function(){
+            // 1. promise优先级最高
+            // if (typeof Promise !== 'undefined') {
+            //     Promise.resolve().then(flushCallbacks)
+            // }
+            // 2.如果无法使用promise 会降级成 MutationObserver
+            // if(typeof MutationObserver  !=='undefined'){
+            //     let observer = new MutationObserver(flushCallbacks);
+            //     observer.observe(app,{childList:true})
+            // }
+            // 3.宏任务 setImmediate MessageChannel
+            // if(typeof setImmediate !== 'undefined'){
+            //     setImmediate(flushCallbacks)
+            // }
+             setTimeout(flushCallbacks);
+        }
+        timerFunc();
+        console.log(2222);
+        for(let i = 0 ; i< 10;i++){
+            app.appendChild(document.createElement('p'));
+        }
+    </script>
+</body>
+
+</html>

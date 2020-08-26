@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 服务器上没有../ 路径 可以采用相对路径 或者绝对路径 / 指代的是当前服务器 -->
+    <!-- 不能通过 ../ 找服务器的上层路径 -->
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <!-- http 报文 -->
+    <button id="btn"></button>
+    <script>
+        function xxx(data){
+            console.log(data)
+        }
+        btn.addEventListener('click',()=>{
+            // ajax 4步  cors 纯后端允许跨域
+            let xhr = new XMLHttpRequest();  // axios  fetch
+            xhr.open('post','http://localhost:3000/data',true);
+            xhr.setRequestHeader('token','jw')
+            xhr.responseType = 'json';
+            xhr.onload = function () { // 状态4 并且服务端返回时2开头
+                console.log(xhr.response)
+            }
+            xhr.send('name=123'); // 放的数据 需要当前是post方法
+            
+            // let scriptEle = document.createElement('script');
+            // scriptEle.src = 'http://localhost:3000/data?callback=xxx';
+            // document.body.appendChild(scriptEle)
+        });
+        // 跨域 我的前端代码  webpack 8080   服务端3000
+        // 跨域是浏览器的行为 服务端通信不存在跨域的
+        // 跨域 协议 主机 端口 有一个不相等就是跨域
+        // 跨域的解决方案有哪些 iframe  window.name 
+        // nginx websocket (jsonp cors) http-proxy
+
+        // jsonp  我借助没有 跨域问题的标签 style img(pv uv点击数)  script （cdn）
+    </script>
+</body>
+</html>
