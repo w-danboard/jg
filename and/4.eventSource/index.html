@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="clock" style="border: 1px solid red; height: 30px;"></div>
+  </iframe>
+  <script>
+    // eventSource是浏览器自带的
+    let eventSource = new EventSource('/clock')
+    let clock = document.querySelector('#clock')
+    // 监听服务器发过来的消息
+    eventSource.onmessage = function (event) {
+      let message = event.data
+      clock.innerHTML = message
+    }
+
+    eventSource.onopen = function (event) {
+      console.log('onopen', event.data)
+    }
+
+    // 监听连接请求失败错误事件
+    eventSource.onerror = function (event) {}
+  </script>
+</body>
+</html>
