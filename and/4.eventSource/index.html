@@ -9,7 +9,7 @@
   <div id="clock" style="border: 1px solid red; height: 30px;"></div>
   </iframe>
   <script>
-    // eventSource是浏览器自带的
+    // eventSource是浏览器自带的 不能跨域
     let eventSource = new EventSource('/clock')
     let clock = document.querySelector('#clock')
     // 监听服务器发过来的消息
