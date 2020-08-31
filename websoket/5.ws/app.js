@@ -5,7 +5,7 @@ app.use(express.static(__dirname))
 app.listen(8000)
 
 let WebSockerServer = require('ws').Server
-let server = new WebSockerServer({ port: 3000 })
+let server = new WebSockerServer({ port: 9999 })
 // socket 插座 套接字
 server.on('connection', function (socket) {
   console.log('2.服务器端监听到了客户端的连接')
