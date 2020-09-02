@@ -19,7 +19,7 @@ program.on('--help', () => {
   console.log(chalk.yellowBright('Examples'))
   Object.values(config).forEach(val => {
     if (val.usage) {
-      console.log(chalk.blueBright('  ' + val.usage))
+      console.log(chalk.blueBright('danboard-http-server ' + val.option.match(/(--[a-z]+)/)[0] + ' ' + val.usage))
     }
   })
 })

@@ -15,7 +15,7 @@ const config = {
   host: {
     option: '-h, --host <val>',
     description: 'set your hostname',
-    usage: 'localhost'
+    usage: '127.0.0.1'
   }
 }
 
