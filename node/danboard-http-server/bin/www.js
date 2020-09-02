@@ -4,6 +4,8 @@ const { program } = require('commander')
 const chalk = require('chalk'); // 粉笔模块 终端输出带有颜色的文字
 const { version } = require('../package.json')
 const config = require('./config.js')
+const Server = require('../src/server.js')
+
 program.name(chalk.redBright('danboard-http-server'))
 program.usage(chalk.redBright('[args]'))
 program.version(version)
@@ -35,4 +37,7 @@ keys.forEach(key => {
   resultConfig[key] = parserObj[key] || config[key].usage
 })
 
-console.log(resultConfig, '===>')
+// console.log(resultConfig, '===>')
+
+const server = new Server(resultConfig)
+server.start()
